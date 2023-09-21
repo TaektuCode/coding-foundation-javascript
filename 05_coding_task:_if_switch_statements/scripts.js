@@ -47,7 +47,7 @@ const oldYoung = function (num) {
     return "children";
   } else if (num > 16 && num < 50) {
     return "young person";
-  } else if (num <= 0 || num === NaN) {
+  } else if (isNaN(num) || num < 0) {
     return "invalid Parameter";
   } else {
     return "elder Person";
@@ -65,3 +65,5 @@ console.log(oldYoung(-1));
 
 console.log(oldYoung(86));
 // result should be elder person
+
+console.log(oldYoung("hallo"));
