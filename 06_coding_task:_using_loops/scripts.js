@@ -4,9 +4,9 @@
 
 // TODO: Implement the oddNumbers function
 
-let result = "";
-
 const oddNumbers = function (a, b) {
+  //declare a variable with an empty string
+  let result = "";
   // check value a and value b (they should not be negativ)
   if (a >= 0 && b >= 0) {
     //loop through the parameters
