@@ -4,7 +4,7 @@
 
 const removeItem = function (arr, i) {
   const newArray = arr.slice();
-  newArray.splice(i, 1);
+  newArray.splice(i - 1, 1);
   return newArray;
 };
 
